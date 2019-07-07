@@ -27,17 +27,17 @@ requirements:
     - r-base
     - r-dplyr
     - r-generics
-    - r-rlang
+    - r-rlang >=0.4.0
     - r-tidyselect
-    - r-vctrs
+    - r-vctrs >=0.2.0
     - r-yardstick
   run:
     - r-base
     - r-dplyr
     - r-generics
-    - r-rlang
+    - r-rlang >=0.4.0
     - r-tidyselect
-    - r-vctrs
+    - r-vctrs >=0.2.0
     - r-yardstick
 
 test:
