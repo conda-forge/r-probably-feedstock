@@ -1,4 +1,4 @@
-{% set version = '0.0.2' %}
+{% set version = "0.0.3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/probably_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/probably/probably_{{ version }}.tar.gz
-  sha256: 5f78a1f02c3c14711e69326c85e19731ce8a99e7d8c195a13ea6c1774953a1c7
+  sha256: 88bfbad9cfcf7dd4745c23b9e73b899e8b4822cb0a1186559f340f8d983fd944
 
 build:
   merge_build_host: True  # [win]
@@ -27,17 +27,17 @@ requirements:
     - r-base
     - r-dplyr
     - r-generics
-    - r-rlang
+    - r-rlang >=0.4.0
     - r-tidyselect
-    - r-vctrs
+    - r-vctrs >=0.2.0
     - r-yardstick
   run:
     - r-base
     - r-dplyr
     - r-generics
-    - r-rlang
+    - r-rlang >=0.4.0
     - r-tidyselect
-    - r-vctrs
+    - r-vctrs >=0.2.0
     - r-yardstick
 
 test:
