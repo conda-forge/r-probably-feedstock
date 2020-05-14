@@ -1,4 +1,4 @@
-{% set version = "0.0.4" %}
+{% set version = "0.0.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/probably_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/probably/probably_{{ version }}.tar.gz
-  sha256: 9c6b9da3c6784eea6aefea5d5a8ef4b81b3fe7dc0f80b33966f39a25a0528f97
+  sha256: 67006e7797666ea8f808f4c88bc79b033ea4d94c2449242d12a97fa7414f6ad9
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -48,11 +48,9 @@ test:
 about:
   home: https://github.com/tidymodels/probably/
   license: GPL-2
-  summary: 'Models can be improved by post-processing class probabilities, by: recalibration,
-    conversion to hard probabilities, assessment of equivocal zones, and other activities.
-    ''probably'' contains tools for conducting these operations. '
+  summary: "Models can be improved by post-processing class probabilities, by: recalibration, conversion to hard probabilities, assessment of equivocal zones, and other activities. 'probably' contains tools for conducting these operations. "
   license_family: GPL2
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
