@@ -47,7 +47,7 @@ test:
 
 about:
   home: https://github.com/tidymodels/probably/
-  license: GPL-2
+  license: GPL-2.0-only
   summary: "Models can be improved by post-processing class probabilities, by: recalibration, conversion to hard probabilities, assessment of equivocal zones, and other activities. 'probably' contains tools for conducting these operations. "
   license_family: GPL2
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
