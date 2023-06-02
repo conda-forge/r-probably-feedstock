@@ -1,11 +1,11 @@
-About r-probably
-================
+About r-probably-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-probably-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/tidymodels/probably/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-probably-feedstock/blob/main/LICENSE.txt)
 
 Summary: Models can be improved by post-processing class probabilities, by: recalibration, conversion to hard probabilities, assessment of equivocal zones, and other activities. 'probably' contains tools for conducting these operations. 
 
